@@ -30,47 +30,57 @@
         {
             this.components = new System.ComponentModel.Container();
             this.classesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.programsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btnSaveStudents = new System.Windows.Forms.Button();
-            this.btnSavePrograms = new System.Windows.Forms.Button();
             this.aGMUDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aGMUDataSet = new AGMU1.AGMUDataSet();
+            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classesTableAdapter = new AGMU1.AGMUDataSetTableAdapters.ClassesTableAdapter();
-            this.studentsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.StudentsTableAdapter();
-            this.programsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.ProgramsTableAdapter();
+            this.programsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnSaveStudents = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.programIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnSavePrograms = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.classesTableAdapter = new AGMU1.AGMUDataSetTableAdapters.ClassesTableAdapter();
+            this.studentsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.StudentsTableAdapter();
+            this.programsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.ProgramsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.programsBindingSource)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGMUDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGMUDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.programsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // classesBindingSource
             // 
             this.classesBindingSource.DataMember = "Classes";
             this.classesBindingSource.DataSource = this.aGMUDataSetBindingSource;
+            // 
+            // aGMUDataSetBindingSource
+            // 
+            this.aGMUDataSetBindingSource.DataSource = this.aGMUDataSet;
+            this.aGMUDataSetBindingSource.Position = 0;
+            // 
+            // aGMUDataSet
+            // 
+            this.aGMUDataSet.DataSetName = "AGMUDataSet";
+            this.aGMUDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // studentsBindingSource
             // 
@@ -92,15 +102,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(544, 231);
             this.dataGridView1.TabIndex = 0;
             // 
-            // studentsBindingSource1
+            // idDataGridViewTextBoxColumn
             // 
-            this.studentsBindingSource1.DataMember = "Students";
-            this.studentsBindingSource1.DataSource = this.aGMUDataSetBindingSource;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // programsBindingSource
             // 
             this.programsBindingSource.DataMember = "Programs";
             this.programsBindingSource.DataSource = this.aGMUDataSetBindingSource;
+            // 
+            // studentsBindingSource1
+            // 
+            this.studentsBindingSource1.DataMember = "Students";
+            this.studentsBindingSource1.DataSource = this.aGMUDataSetBindingSource;
             // 
             // tabControl1
             // 
@@ -127,37 +150,16 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // btnSaveStudents
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(556, 282);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Staff";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.btnSavePrograms);
-            this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(556, 282);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Programs";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(556, 282);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Courses";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.btnSaveStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveStudents.Location = new System.Drawing.Point(251, 243);
+            this.btnSaveStudents.Name = "btnSaveStudents";
+            this.btnSaveStudents.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveStudents.TabIndex = 1;
+            this.btnSaveStudents.Text = "Save";
+            this.btnSaveStudents.UseVisualStyleBackColor = true;
+            this.btnSaveStudents.Click += new System.EventHandler(this.btnSaveStudents_Click);
             // 
             // dataGridView2
             // 
@@ -174,63 +176,6 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(544, 231);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // btnSaveStudents
-            // 
-            this.btnSaveStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveStudents.Location = new System.Drawing.Point(251, 243);
-            this.btnSaveStudents.Name = "btnSaveStudents";
-            this.btnSaveStudents.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveStudents.TabIndex = 1;
-            this.btnSaveStudents.Text = "Save";
-            this.btnSaveStudents.UseVisualStyleBackColor = true;
-            this.btnSaveStudents.Click += new System.EventHandler(this.btnSaveStudents_Click);
-            // 
-            // btnSavePrograms
-            // 
-            this.btnSavePrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavePrograms.Location = new System.Drawing.Point(239, 243);
-            this.btnSavePrograms.Name = "btnSavePrograms";
-            this.btnSavePrograms.Size = new System.Drawing.Size(75, 23);
-            this.btnSavePrograms.TabIndex = 2;
-            this.btnSavePrograms.Text = "Save";
-            this.btnSavePrograms.UseVisualStyleBackColor = true;
-            this.btnSavePrograms.Click += new System.EventHandler(this.btnSavePrograms_Click);
-            // 
-            // aGMUDataSetBindingSource
-            // 
-            this.aGMUDataSetBindingSource.DataSource = this.aGMUDataSet;
-            this.aGMUDataSetBindingSource.Position = 0;
-            // 
-            // aGMUDataSet
-            // 
-            this.aGMUDataSet.DataSetName = "AGMUDataSet";
-            this.aGMUDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // classesTableAdapter
-            // 
-            this.classesTableAdapter.ClearBeforeFill = true;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // programsTableAdapter
-            // 
-            this.programsTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn1
             // 
@@ -268,6 +213,61 @@
             this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
             this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(556, 282);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Staff";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btnSavePrograms);
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(556, 282);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Programs";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnSavePrograms
+            // 
+            this.btnSavePrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavePrograms.Location = new System.Drawing.Point(239, 243);
+            this.btnSavePrograms.Name = "btnSavePrograms";
+            this.btnSavePrograms.Size = new System.Drawing.Size(75, 23);
+            this.btnSavePrograms.TabIndex = 2;
+            this.btnSavePrograms.Text = "Save";
+            this.btnSavePrograms.UseVisualStyleBackColor = true;
+            this.btnSavePrograms.Click += new System.EventHandler(this.btnSavePrograms_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(556, 282);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Courses";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // classesTableAdapter
+            // 
+            this.classesTableAdapter.ClearBeforeFill = true;
+            // 
+            // studentsTableAdapter
+            // 
+            this.studentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // programsTableAdapter
+            // 
+            this.programsTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,19 +275,19 @@
             this.ClientSize = new System.Drawing.Size(588, 348);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AGMU Program Database";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.programsBindingSource)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGMUDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGMUDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.programsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
