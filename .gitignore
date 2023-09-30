@@ -3,7 +3,8 @@
 ################################################################################
 
 DotNet/AGMU/.vs
-DotNet/AGMU/.vs/AGMU/v17/.suo
 DotNet/AGMU.WindowsForms/bin
 DotNet/AGMU.WindowsForms/obj
 
+DotNet/AGMU.WebApi/bin
+DotNet/AGMU.WebApi/obj
