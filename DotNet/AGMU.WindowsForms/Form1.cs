@@ -19,8 +19,10 @@ namespace AGMU1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'aGMUDataSet.Programs' table. You can move, or remove it, as needed.
-            this.programsTableAdapter.Fill(this.aGMUDataSet.Programs);
+            // TODO: This line of code loads data into the 'aGMUDataSet.AcademicPrograms' table. You can move, or remove it, as needed.
+            this.academicProgramsTableAdapter.Fill(this.aGMUDataSet.AcademicPrograms);
+            
+       
             // TODO: This line of code loads data into the 'aGMUDataSet.Students' table. You can move, or remove it, as needed.
             this.studentsTableAdapter.Fill(this.aGMUDataSet.Students);
             // TODO: This line of code loads data into the 'aGMUDataSet.Classes' table. You can move, or remove it, as needed.
@@ -41,7 +43,12 @@ namespace AGMU1
 
         private void btnSavePrograms_Click(object sender, EventArgs e)
         {
-            this.programsTableAdapter.Update(this.aGMUDataSet);
+            this.academicProgramsTableAdapter.Update(this.aGMUDataSet);
+        }
+
+        private void programsBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -53,7 +53,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.classesTableAdapter = new AGMU1.AGMUDataSetTableAdapters.ClassesTableAdapter();
             this.studentsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.StudentsTableAdapter();
-            this.programsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.ProgramsTableAdapter();
+            this.academicProgramsTableAdapter = new AGMU1.AGMUDataSetTableAdapters.AcademicProgramsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.classesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGMUDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGMUDataSet)).BeginInit();
@@ -117,8 +117,9 @@
             // 
             // programsBindingSource
             // 
-            this.programsBindingSource.DataMember = "Programs";
+            this.programsBindingSource.DataMember = "AcademicPrograms";
             this.programsBindingSource.DataSource = this.aGMUDataSetBindingSource;
+            this.programsBindingSource.CurrentChanged += new System.EventHandler(this.programsBindingSource_CurrentChanged);
             // 
             // studentsBindingSource1
             // 
@@ -264,9 +265,9 @@
             // 
             this.studentsTableAdapter.ClearBeforeFill = true;
             // 
-            // programsTableAdapter
+            // academicProgramsTableAdapter
             // 
-            this.programsTableAdapter.ClearBeforeFill = true;
+            this.academicProgramsTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -302,7 +303,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource studentsBindingSource1;
         private System.Windows.Forms.BindingSource programsBindingSource;
-        private AGMUDataSetTableAdapters.ProgramsTableAdapter programsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabControl tabControl1;
@@ -318,6 +318,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
+        private AGMUDataSetTableAdapters.AcademicProgramsTableAdapter academicProgramsTableAdapter;
     }
 }
 
