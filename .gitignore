@@ -2,6 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
-/AGMU1/bin/
-/AGMU1/obj/
+DotNet/AGMU/.vs
+DotNet/AGMU/.vs/AGMU/v17/.suo
+DotNet/AGMU.WindowsForms/bin
+DotNet/AGMU.WindowsForms/obj
+

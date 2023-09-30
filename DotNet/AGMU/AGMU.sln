@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGMU1", "AGMU1\AGMU1.csproj", "{31DA0D02-26EF-4F09-8384-B2C3F995D0A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGMU.WindowsForms", "..\AGMU.WindowsForms\AGMU.WindowsForms.csproj", "{31DA0D02-26EF-4F09-8384-B2C3F995D0A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EE2432F1-77C4-4316-AF07-B2314125A8E3}
+		SolutionGuid = {70E1AFE3-C6D3-408B-A1A8-11775C76A86E}
 	EndGlobalSection
 EndGlobal
