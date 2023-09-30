@@ -11,6 +11,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AgmuContext>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("all", policy =>
+    {
+        _ = policy
+          .AllowAnyHeader()
+          .AllowAnyMethod()
+          .AllowAnyOrigin();
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,5 +35,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors("all");
 
 app.Run();
